@@ -2,17 +2,22 @@ print "/------------------\\\n";
 print "| A.L.I.C.E. v0.08 |\n";
 print "\\------------------/\n\n";
 print "MOBILE SUIT OPERATION SYSTEM\n";
-print "[A] lan\n";
-print "[L] Leung\n";
-print "[I] s probably\n";
-print "[C] ooler than\n";
-print "[E] verybody else.\n\n";
+print "[A] \n";
+print "[L] \n";
+print "[I] \n";
+print "[C] \n";
+print "[E] \n";
 
+# This is the adb command we use to interact with the device.
+# The default is adb.exe (Windows CMD is ok without the .exe) 
 my $adb = "adb";
 
+# Override this for Mac.
 if ($^O =~/.*darwin.*/) {
  $adb = "./adb.mac";
 }
+
+# Override this for Linux.
 if ($^O =~/.*linux.*/) {
  $adb = "./adb.linux";
 }
