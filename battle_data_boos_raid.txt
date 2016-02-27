@@ -1,0 +1,38 @@
+# This is how the cooridnates works:
+#
+# -----------------------------------------
+# |(0,0)                         (0,100)  |
+# |                                       |
+# |                                       |
+# |            Phone Screen               |
+# |                                       |
+# |                                       |
+# |(100,0)                       (100 100)|
+# -----------------------------------------
+#
+# The dead center of the screen would be 50 50
+# Commands availables are:
+# click_area <x> <y>
+# swipe_area <x1> <y1> <x2> <y2>
+# wait <seconds>
+
+# This aims for the start quest button.
+click_area 50 40
+
+# This aims for the pick ally button.
+click_area 90 55
+
+# This aims for the quest select button.
+click_area 20 80
+
+# This aims for the EN tubes confirmation.
+click_area 80 77
+
+# This aims for the skill button.
+click_area 95 92
+
+# This moves until forward.
+swipe_area 92 10 62 10
+
+# Idle a bit, so we don't drain the phone's battery.
+# wait 1

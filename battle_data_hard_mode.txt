@@ -1,0 +1,41 @@
+# This is how the cooridnates works:
+#
+# -----------------------------------------
+# |(0,0)                         (0,100)  |
+# |                                       |
+# |                                       |
+# |            Phone Screen               |
+# |                                       |
+# |                                       |
+# |(100,0)                       (100 100)|
+# -----------------------------------------
+#
+# The dead center of the screen would be 50 50
+# Commands availables are:
+# click_area <x> <y>
+# swipe_area <x1> <y1> <x2> <y2>
+# wait <seconds>
+
+# Start here.
+#This aims for the start quest button.
+click_area 50 40
+
+# This aims for the pick ally button.
+click_area 90 40 
+
+# This aims for the EN tubes confirmation.
+# Double tap, this should clear "TOUCH SCREEN"
+click_area 80 77
+click_area 80 77
+
+# This is the purple "spread units" button.
+swipe_area 92 10 72 25
+
+# This aims for the skill button.
+#click_area 98 96
+
+# Rematch button.
+click_area 90 70 
+
+# Idle a bit, so we don't drain the phone's battery.
+# wait 1
